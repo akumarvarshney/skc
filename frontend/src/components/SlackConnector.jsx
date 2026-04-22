@@ -11,7 +11,7 @@
 
 import { useState, useEffect } from "react";
 
-const API = "http://localhost:8000";
+const API = "https://skc-production.up.railway.app";
 
 export default function SlackConnector() {
   const [status, setStatus] = useState(null);          // from /status

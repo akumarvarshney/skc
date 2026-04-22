@@ -11,7 +11,7 @@
 
 import { useState, useEffect } from "react";
 
-const API = "http://localhost:8000";
+const API = "https://skc-production.up.railway.app";
 
 function authHeaders() {
   const t = localStorage.getItem("skc_token");
