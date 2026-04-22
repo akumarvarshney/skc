@@ -76,7 +76,7 @@ function handleRestore(msgs) {
     try {
       const form = new FormData();
       form.append("file", file);
-      formData.append("namespace", namespace);
+      form.append("namespace", namespace);
       const r = await fetch(`${API}/ingest/upload`, { method: "POST", body: form });
       const d = await r.json();
       if (!r.ok) throw new Error(d.detail || "Upload failed");
