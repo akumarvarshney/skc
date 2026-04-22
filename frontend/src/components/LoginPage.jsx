@@ -11,7 +11,7 @@
 
 import { useState } from "react";
 
-const API = "http://localhost:8000";
+const API = "https://skc-production.up.railway.app";
 
 export default function LoginPage({ onLogin }) {
   const [username, setUsername] = useState("");
