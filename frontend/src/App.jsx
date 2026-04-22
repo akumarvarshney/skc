@@ -6,7 +6,7 @@ import NamespaceSelector from "./components/NamespaceSelector";
 import LoginPage from "./components/LoginPage";
 import ChatHistory from "./components/ChatHistory";
 
-const API = "http://localhost:8000";
+const API = "https://skc-production.up.railway.app";
 const authHeaders = () => { const t = localStorage.getItem("skc_token"); return t ? { "Authorization": `Bearer ${t}` } : {}; };
 
 const fmt_size = (b) => b > 1048576 ? `${(b/1048576).toFixed(1)}MB` : `${(b/1024).toFixed(0)}KB`;
